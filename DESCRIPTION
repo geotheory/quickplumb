@@ -1,0 +1,18 @@
+Package: quickplumb
+Type: Package
+Title: Quick Plumb API
+Version: 0.1.0
+Author: Robin Edwards (@geotheory)
+Description: Generate a highly flexible plumber API with just a few lines
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    dbplyr,
+    stringr,
+    purrr,
+    plumber,
+    RPostgreSQL,
+    testthat
+RoxygenNote: 6.1.0
