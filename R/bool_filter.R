@@ -1,9 +1,10 @@
 #' Boolean search filtering
 #' @description A function to filter a data.frame, tibble or dplyr database connection table using boolean logical queries
 #' @param db_tbl response variables - a special argument for the names of fields to include/omit in the response. e.g. return only "resp_vars=Species,Sepal.Length" or omit "resp_vars=-Species"
-#' @param col variables to sort response by - e.g. "sort_vars=Species,Sepal.Length" (mutiple variables) or "sort_vars=-Petal.Length" (reverse order)
-#' @param qry Maximum data rows to return
-#' @param print_call Maximum data rows to return
+#' @param col variables to query - e.g. "col=Species"
+#' @param qry Boolean search query - e.g. "qry=Sep OR Set"
+#' @param case_sens Case-sensitive querying (default FALSE) - e.g. "case_sens=TRUE"
+#' @param print_call Print the resulting sequal query to console (default FALSE)
 #' @export
 #' @example examples/bool_filter_examples.R
 bool_filter <- function(db_tbl, col, qry, case_sens=FALSE, print_call=FALSE){
